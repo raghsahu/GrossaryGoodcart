@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GrossaryApp</string>
+    <string name="app_name">Grocery Goodcart</string>
     <string name="skip">Skip</string>
     <string name="login">Login</string>
     <string name="forget_pw">Forget password</string>
