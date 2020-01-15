@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--10-->
+    <style name="text_10red">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+
+    <!--12-->
+    <style name="text_12red_bold">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_12black">
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+
+    <style name="text_12white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+
+    <style name="text_12green">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+
+    <style name="text_12gray">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+
+    <!--14-->
+    <style name="text_14orange_bold">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_14black_bold">
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_14white_bold">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_14red_bold">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <!--16-->
+    <style name="text_16red_bold">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/aileron_semibold</item>
+    </style>
+
+    <style name="text_16black">
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+
+    <style name="text_16gray">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/aileron_regular</item>
+    </style>
+
+
+</resources>

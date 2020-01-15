@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_white"
+    tools:context=".ui.activity.ActivityNavigation"
+    tools:showIn="@layout/app_bar_activity_navigation">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/user_home_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/user_home_ci_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_30sdp"
+            app:ci_animator="@animator/indicator_animator"
+            app:ci_animator_reverse="@animator/indicator_animator_reverse"
+            app:ci_drawable="@drawable/btn_bg_red"
+            app:ci_height="6dp"
+            app:ci_margin="6dp"
+            app:ci_width="6dp" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_130sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/idCardView"
+
+        android:layout_marginTop="0dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardCornerRadius="15dp"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp">
+     <ImageView
+         android:layout_width="@dimen/_20sdp"
+         android:layout_height="@dimen/_20sdp"
+         android:src="@drawable/heart2"/>
+        <TextView
+                android:text="Free shipping"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_24sdp"/>
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/policy2"
+            android:layout_marginLeft="@dimen/_103sdp"/>
+        <TextView
+            android:text="Special plan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_129sdp"/>
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/policy"
+            android:layout_marginLeft="@dimen/_202sdp"/>
+        <TextView
+            android:text="24/7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_230sdp"
+            android:textSize="@dimen/_12sdp"/>
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="left"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:text="Top Categories"
+            android:textStyle="bold"
+            android:textColor="#80bb01"
+            android:textSize="@dimen/_12sdp"
+            />
+        <TextView
+            android:id="@+id/viewall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_gravity="left"
+            android:ellipsize="end"
+            android:text="View All"
+            android:textColor="#000"
+            android:textSize="@dimen/_12sdp"
+            />
+        </LinearLayout>
+
+        <!--<androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+            <!--android:id="@+id/swipeToRefresh"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="visible">-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+        <!--</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+        </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:scaleType="fitXY"
+                       android:layout_width="match_parent"
+                       android:layout_height="@dimen/_80sdp"
+                       android:layout_gravity="center"
+                       android:layout_marginTop="@dimen/_7sdp"
+                       android:layout_marginBottom="@dimen/_2sdp"
+                       android:layout_marginLeft="@dimen/_10sdp"
+                       android:layout_marginRight="@dimen/_10sdp"
+
+                       android:src="@drawable/banner6"
+
+
+
+                       />
+
+           </LinearLayout>
+
+
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp">
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recycleViewContainer3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+              />
+       </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:background="#fff"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="left"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:text="Special plan"
+                    android:textStyle="bold"
+                    android:textColor="#80bb01"
+                    android:textSize="@dimen/_15sdp"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_see_all_plans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_gravity="left"
+                    android:ellipsize="end"
+                    android:text="See all plans"
+                    android:textColor="#80bb01"
+                    android:textSize="@dimen/_12sdp"
+                    />
+            </LinearLayout>
+
+
+
+
+            <HorizontalScrollView
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+
+                <LinearLayout
+
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_180sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+
+
+                    android:orientation="horizontal"
+                    >
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleViewContainer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true" />
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
+
+
+
+       </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

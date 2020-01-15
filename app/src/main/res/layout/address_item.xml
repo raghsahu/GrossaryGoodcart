@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_set"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_125sdp"
+        android:layout_weight=".8"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_margin="@dimen/_1sdp"
+        android:padding="@dimen/_3sdp">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_1sdp">
+
+
+            <TextView
+                android:layout_weight="0.45"
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="EC-52, Scheme No -94, \n In-front of Hotel Karnawat,
+                 \nNear Bombay Hospital"
+                android:maxLines="3"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_weight="0.55"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/_3sdp">
+
+
+                <TextView
+                    android:layout_weight="0.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Delivery Address"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <RadioButton
+                    android:id="@+id/radio_select"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="0.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/iv_set_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/verified"
+                    android:layout_gravity="right"
+                    android:layout_margin="@dimen/_4sdp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_edit_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    app:srcCompat="@drawable/ic_edit_"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/delete"
+                    />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
